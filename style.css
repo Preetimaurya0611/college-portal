@@ -555,13 +555,11 @@ tbody tr:hover {
 
 .sub-menu{
   display: none;
-  position: absolute;
-  top: -1px;
-  left: 100%;
+  position: static;
+  margin-left: 20px;
   width: 260px;
   background: #223e66;
   border-radius: 8px;
-  z-index: 999;
 }
 
 .has-sub:hover > .sub-menu{
@@ -827,6 +825,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

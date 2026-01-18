@@ -552,8 +552,7 @@ tbody tr:hover {
 }
 
 .has-sub span{
-  position: absolute;
-  right: 20px;
+  right: 14px;
 }
 
 /* ===== STUDENTS SUBMENU – FINAL SAFE FIX ===== */
@@ -827,6 +826,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

@@ -517,6 +517,7 @@ tbody tr:hover {
   background: #1f365c;
   border-radius: 8px;
   z-index: 500;
+  overflow: visible;
 }
 
 .students-dropdown:hover .students-menu{
@@ -555,7 +556,7 @@ tbody tr:hover {
 .sub-menu{
   display: none;
   position: absolute;
-  top: 0;
+  top: -1px;
   left: 100%;
   width: 260px;
   background: #223e66;
@@ -807,6 +808,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

@@ -518,14 +518,23 @@ tbody tr:hover {
   display:block;
 }
 
-.students-menu a{
+/* NORMAL MENU ITEMS */
+.students-menu > a{
+  display:block;
+  padding:14px 20px;
+  color:#fff;
+  text-decoration:none;
+  border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+/* SUBMENU TITLE ONLY */
+.sub-title{
   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:14px 20px;
   color:#fff;
-  text-decoration:none;
-  border-bottom:1px solid rgba(255,255,255,.15);
+  cursor:pointer;
 }
 
 .students-menu a:hover{
@@ -800,6 +809,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

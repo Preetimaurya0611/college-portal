@@ -513,7 +513,8 @@ tbody tr:hover {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 320px;
+  min-width: 320px;
+  max-width: 360px;
   background: #1f365c;
   border-radius: 8px;
   z-index: 500;
@@ -555,11 +556,14 @@ tbody tr:hover {
 
 .sub-menu{
   display: none;
-  position: static;
-  margin-left: 20px;
-  margin-top: 6px;
+  position: absolute;      /* ✔ FIX */
+  left: 100%;              /* right side open */
+  top: 0;
+  min-width: 260px;
   background: #223e66;
   border-radius: 8px;
+  margin: 0;
+  z-index: 600;
 }
 
 .has-sub:hover > .sub-menu{
@@ -806,6 +810,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

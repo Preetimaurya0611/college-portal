@@ -518,40 +518,26 @@ tbody tr:hover {
   background: #1f365c;
   border-radius: 8px;
   z-index: 500;
-  flex-direction: column;
 }
 
+/* show on hover */
 .students-dropdown:hover .students-menu{
-  display: flex;
+  display: block;
 }
 
 /* NORMAL LINKS */
-.students-menu a,
-.sub-title{
+.students-menu a{
+  diplay: block;
   padding: 14px 20px;
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,.15);
 }
 
-
-/* SUB MENU */
-.has-sub{
-  position: relative;
-}
-
-.sub-menu{
-  display: none;
-  position: absolute;     
-  left: 100%;              
-  top: 0;
-  min-width: 280px;
-  background: #223e66;
-  border-radius: 8px;
-}
-
-.has-sub:hover > .sub-menu{
-  display: block;
+/* hover */
+.students-menu a:hover{
+  background: #162b4d;
+  color: #ffcc00;
 }
 
 /* ================= FACULTY DROPDOWN ================= */
@@ -794,6 +780,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

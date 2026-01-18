@@ -298,20 +298,17 @@ label{
 }
 
 /* Students dropdown width */
-.students-menu{
-  min-width:300px;
-}
-
-/* Dropdown hover effect */
-.dropdown-item{
+/* Students dropdown items only */
+.students-menu .dropdown-item{
   padding:12px 20px;
   font-size:15px;
 }
 
-.dropdown-item:hover{
+.students-menu .dropdown-item:hover{
   background:#0d6efd;
   color:#fff;
 }
+
 
 /* Navbar spacing */
 .navbar-nav .nav-link{
@@ -642,4 +639,5 @@ tbody tr:hover {
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 

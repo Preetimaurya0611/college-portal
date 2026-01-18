@@ -556,16 +556,20 @@ tbody tr:hover {
   right: 20px;
 }
 
+/* ===== STUDENTS SUBMENU – FINAL SAFE FIX ===== */
+
 .sub-menu{
   display: none;
   position: absolute;
   top: 0;
-  left: calc(100% - 8px);  /* ⭐ GAP FIX */
+  right: 100%;          /* ⭐ ALWAYS LEFT SIDE */
   width: 260px;
   background: #223e66;
   border-radius: 8px;
   z-index: 999;
+  overflow: visible;
 }
+
 
 .has-sub:hover > .sub-menu{
   display: block;
@@ -823,6 +827,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

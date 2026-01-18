@@ -739,6 +739,45 @@ textarea:focus{
   display: block;
 }
 
+/* ===== FORMS DROPDOWN – FINAL FIX ===== */
+
+.forms-dropdown{
+  position: relative;
+}
+
+.forms-menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 260px;
+  background: #1f365c;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  z-index: 999;
+}
+
+.forms-menu a{
+  display: block;
+  padding: 14px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.forms-menu a:last-child{
+  border-bottom: none;
+}
+
+.forms-menu a:hover{
+  background:#162b4d;
+  color:#ffcc00;
+}
+
+.forms-dropdown:hover .forms-menu{
+  display: block;
+}   
+
 
 /* ================= REQUIRED STAR ================= */
 
@@ -759,17 +798,6 @@ textarea:focus{
   }
 }
 
-/* ===== FINAL FIX FOR FORMS DROPDOWN ===== */
-
-.dropdown-menu{
-  list-style: none !important;
-  padding-left: 0 !important;
-}
-
-.dropdown-menu li{
-  list-style: none !important;
-}
-
 
 /* RESPONSIVE */
 @media(max-width:992px){
@@ -787,6 +815,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

@@ -18,3 +18,4 @@ document.getElementById("contactForm").addEventListener("submit", async function
     document.getElementById("msg").innerText = "Server error! Backend not reachable";
   }
 });
+

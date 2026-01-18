@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/contact/contact.css">
+</head>
+<body>
+
+<header class="header">
+  <h1>Contact Us</h1>
+</header>
+
+<section class="contact-container">
+  <form 
+  class="contact-form" 
+  id="contactForm"
+  action="/contact"
+  method="POST"
+>
+  <input type="text" name="name" placeholder="Full Name" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="text" name="phone" placeholder="Mobile Number" required>
+
+  <select name="level" required>
+    <option value="">Select Level</option>
+    <option value="UG">UG</option>
+    <option value="PG">PG</option>
+  </select>
+
+  <input type="text" name="course" placeholder="Course Interested">
+
+  <button type="submit">Submit</button>
+  <p id="msg"></p>
+</form>
+
+
+
+</body>
+</html>

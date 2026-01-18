@@ -317,7 +317,7 @@ body {
 
 <!-- NAVBAR -->
  
-<nav class="navbar navbar-expand-lg fixed-top shadow">
+<nav class="navbar navbar-expand-lg fixed-top shadow navbar-light bg-white">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
       <img src="images/logo.jpg" alt="Logo">
@@ -406,7 +406,6 @@ body {
             <li><a href="hsc-form.html">HSC Examination</a></li>
           </ul>
         </li>
-      </li>
       </ul>
     </div>
   </div>
@@ -675,19 +674,68 @@ body {
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Your custom JS -->
+<!-- ================= CUSTOM JAVASCRIPT ================= -->
 <script>
-function openEnquiry(){
-  document.getElementById("enquiryBox").classList.add("active");
+/* ======================================================
+   ENQUIRY POPUP (RIGHT SIDE FORM)
+   ====================================================== */
+function openEnquiry() {
+  const enquiryBox = document.getElementById("enquiryBox");
+  if (enquiryBox) {
+    enquiryBox.classList.add("active");
+  }
 }
-function closeEnquiry(){
-  document.getElementById("enquiryBox").classList.remove("active");
+
+function closeEnquiry() {
+  const enquiryBox = document.getElementById("enquiryBox");
+  if (enquiryBox) {
+    enquiryBox.classList.remove("active");
+  }
 }
+
+/* ======================================================
+   QR POPUP (WHATSAPP GROUP QR)
+   ====================================================== */
+function openQR() {
+  const qrPopup = document.getElementById("qrPopup");
+  if (qrPopup) {
+    qrPopup.style.display = "block";
+  }
+}
+
+function closeQR() {
+  const qrPopup = document.getElementById("qrPopup");
+  if (qrPopup) {
+    qrPopup.style.display = "none";
+  }
+}
+
+/* ======================================================
+   WHATSAPP BUTTON HANDLER
+   (Future safe – abhi direct link open hota hai)
+   ====================================================== */
+function openWhatsApp(event) {
+  // intentionally empty
+  // taaki console error na aaye
+  // WhatsApp link normally open ho
+}
+
+/* ======================================================
+   OPTIONAL SAFETY: ESC key se enquiry band
+   ====================================================== */
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeEnquiry();
+    closeQR();
+  }
+});
 </script>
+
 
 
 </body>
 </html>
+
 
 
 

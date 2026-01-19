@@ -577,14 +577,13 @@ tbody tr:hover {
 
 /* SUB MENU BOX */
 .sub-menu{
-  display: none;
   position: absolute;
   top: 0;
-  left: auto;
   right: 0;
-  width: 260px;
+  width: 240px;
   height: 100%;
   background: #223f6d;
+  display: none;
   border-radius: 0 8px 8px 0;
   list-style: none;
   margin: 0;
@@ -831,12 +830,6 @@ textarea:focus{
   }
 }
 
-@media (max-width: 1200px){
-  .sub-menu{
-    left: auto;
-    right: 100%;
-  }
-}
 
 /* RESPONSIVE */
 @media(max-width:992px){
@@ -854,6 +847,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

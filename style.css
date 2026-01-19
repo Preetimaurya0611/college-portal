@@ -2,6 +2,7 @@
 body{
   font-family: "Segoe UI", sans-serif;
   margin:0;
+  background: #f0f8ff;
   padding-top:70px; /* fixed navbar ke liye */
   overflow-x: hidden;
 }
@@ -850,6 +851,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

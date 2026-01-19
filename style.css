@@ -476,7 +476,7 @@ tbody tr:hover {
   display: none;
   background: #1f365c;
   border-radius: 10px;
-  overflow: hidden;
+  overflow: visible;
   z-index: 999;
 }
 
@@ -789,6 +789,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

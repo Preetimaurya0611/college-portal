@@ -615,6 +615,36 @@ tbody tr:hover {
   display: block;
 }
 
+/* ===== STUDENTS DROPDOWN – FORCE COMPACT SIZE ===== */
+
+/* overall width thodi kam */
+.students-mega{
+  width: 600px !important;
+}
+
+/* row height forcefully kam */
+.mega-col li{
+  height: 40px !important;
+  padding: 0 !important;
+}
+
+/* text size + spacing tight */
+.mega-col a{
+  font-size: 14px !important;
+  padding: 0 14px !important;
+  line-height: 40px !important;
+}
+
+/* submenu rows same size */
+.sub-menu li{
+  height: 40px !important;
+}
+
+.sub-menu a{
+  font-size: 14px !important;
+  padding: 0 14px !important;
+  line-height: 40px !important;
+}
 
 /* ================= FACULTY DROPDOWN ================= */
 
@@ -850,6 +880,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

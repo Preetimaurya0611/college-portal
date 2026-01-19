@@ -503,7 +503,7 @@ tbody tr:hover {
     display: block;
 }
 
-/* ================= STUDENTS DROPDOWN ================= */
+/* ================= STUDENTS DROPDOWN (FINAL) ================= */
 
 .students-dropdown{
   position: relative;
@@ -523,7 +523,7 @@ tbody tr:hover {
   z-index: 999;
 }
 
-/* SHOW */
+/* SHOW ON HOVER */
 .students-dropdown:hover .students-mega{
   display: block;
 }
@@ -535,65 +535,18 @@ tbody tr:hover {
   padding: 0;
 }
 
-/* MAIN ITEMS */
-.students-mega .main-list > li{
-  height: 48px;
-  display: flex;
-  align-items: center;
-  padding: 0 20px;
-  font-size: 15px;
-  color: #fff;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
-  cursor: pointer;
+/* MAIN LIST ITEMS */
+.students-mega .mega-col > li{
   position: relative;
-}
-
-/* SUB MENU */
-.students-mega .sub-list{
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 240px;
-  background: #162b4d;
-  display: none;
-}
-
-/* SHOW SUB */
-.students-mega li.has-sub:hover > .sub-list{
-  display: block;
-}
-
-/* SUB ITEMS */
-.students-mega .sub-list li{
-  height: 48px;
-  padding: 0 18px;
-  display: flex;
-  align-items: center;
-  color: #fff;
   border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-.students-mega li.has-sub::after{
-  content: "›";
-  position: absolute;
-  right: 20px;
-  color: #ffcc00;
-}
-
-/* ===== FINAL LINK FIX ===== */
-
-.students-mega .main-list > li{
-  padding: 0;
-  height: auto;
-}
-
-/* anchor full row */
-.students-mega .main-list > li > a{
+/* MAIN LINKS */
+.students-mega .mega-col > li > a{
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 100%;
   height: 48px;
   padding: 0 20px;
 
@@ -602,9 +555,49 @@ tbody tr:hover {
   font-size: 15px;
 }
 
-/* hover on link */
-.students-mega .main-list > li > a:hover{
+/* HOVER EFFECT */
+.students-mega .mega-col > li > a:hover{
   background: #162b4d;
+  color: #ffcc00;
+}
+
+/* ARROW FOR SUB MENU */
+.students-mega .mega-col > li.has-sub > a::after{
+  content: "›";
+  color: #ffcc00;
+}
+
+/* SUB MENU */
+.students-mega .sub-menu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 240px;
+  background: #162b4d;
+  display: none;
+}
+
+/* SHOW SUB MENU */
+.students-mega .mega-col > li.has-sub:hover > .sub-menu{
+  display: block;
+}
+
+/* SUB MENU LINKS */
+.students-mega .sub-menu li a{
+  display: flex;
+  align-items: center;
+
+  height: 48px;
+  padding: 0 18px;
+
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+/* SUB MENU HOVER */
+.students-mega .sub-menu li a:hover{
+  background: #1f365c;
   color: #ffcc00;
 }
 
@@ -842,6 +835,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

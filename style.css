@@ -515,11 +515,9 @@ tbody tr:hover {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
-
+  width: 680px;
   display: none;
   grid-template-columns: 1fr 1fr;
-
   background: #1f365c;
   border-radius: 8px;
   overflow: hidden;
@@ -545,12 +543,12 @@ tbody tr:hover {
 }
 
 .mega-left li{
-  height: 40px;
+  height: 48px;
   display: flex;
   align-items: center;
   padding: 0 16px;
   color: #fff;
-  font-size: 14px;
+  font-size: 15px;
   border-bottom: 1px solid rgba(255,255,255,0.15);
   cursor: pointer;
 }
@@ -821,6 +819,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

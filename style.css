@@ -513,7 +513,8 @@ tbody tr:hover {
 .students-mega{
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 520px;
   background: #1f365c;
   border-radius: 8px;
@@ -538,6 +539,7 @@ tbody tr:hover {
 .mega-col li{
   height: 52px;
   display: flex;
+  padding-right: 30px;
   align-items: center;
   position: relative;
   border-bottom: 1px solid rgba(255,255,255,0.15);
@@ -578,7 +580,8 @@ tbody tr:hover {
   display: none;
   position: absolute;
   top: 0;
-  left: 100%;
+  left: auto;
+  right: 0;
   width: 260px;
   height: 100%;
   background: #223f6d;
@@ -851,6 +854,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

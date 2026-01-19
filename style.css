@@ -341,29 +341,6 @@ label{
 
 /* ===== RIGHT SUBMENU (ANNOUNCEMENTS) ===== */
 
-.has-sub{
-  cursor:pointer;
-}
-
-.has-sub span{
-  position:absolute;
-  right:20px;
-}
-
-.sub-menu{
-  position:absolute;
-  top:0;
-  left:100%;
-  width:260px;
-  background:#223e66;
-  border-radius:8px;
-  display:none;
-}
-
-.has-sub:hover .sub-menu{
-  display:block;
-}
-
 .sub-menu a{
   display:block;
   padding:14px 20px;
@@ -480,28 +457,8 @@ tbody tr:hover {
     }
 }
 
-/* ===== HIDE ALL SUB-MENUS BY DEFAULT ===== */
-.has-sub > .sub-menu {
-    display: none;
-}
 
-/* ===== SHOW FIRST LEVEL ON HOVER ===== */
-.has-sub:hover > .sub-menu {
-    display: block;
-}
 
-/* ===== NESTED SUB-MENU (Student Events) ===== */
-.has-sub .has-sub > .sub-menu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-}
-
-/* ===== SHOW Makers / Engineer / Freshers ONLY ON Student Events HOVER ===== */
-.has-sub .has-sub:hover > .sub-menu {
-    display: block;
-}
 
 /* ================= STUDENTS DROPDOWN (FINAL) ================= */
 
@@ -546,12 +503,10 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   height: 48px;
   padding: 0 20px;
-
-  color: #ffffff;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
   font-size: 15px;
 }
 
@@ -586,12 +541,10 @@ tbody tr:hover {
 .students-mega .sub-menu li a{
   display: flex;
   align-items: center;
-
   height: 48px;
   padding: 0 18px;
-
-  color: #ffffff;
-  text-decoration: none;
+  color: #ffffff !important;
+  text-decoration: none !important;
   border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
@@ -835,6 +788,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

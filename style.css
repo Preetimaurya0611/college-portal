@@ -502,12 +502,15 @@ tbody tr:hover {
 .students-mega .mega-col > li > a{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  height: 42px;
+  justify-content: flex-start;
+  min-height: 42px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0 20px;
   color: #ffffff !important;
   text-decoration: none !important;
   font-size: 15px;
+  white-space: nowrap;
 }
 
 /* HOVER EFFECT */
@@ -519,6 +522,7 @@ tbody tr:hover {
 /* ARROW FOR SUB MENU */
 .students-mega .mega-col > li.has-sub > a::after{
   content: "›";
+  margin-left: auto;
   color: #ffcc00;
   font-size: 18px;
 }
@@ -789,6 +793,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

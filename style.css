@@ -107,13 +107,6 @@ body{
   margin-bottom: 40px;
 }
 
-.social-links{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
 .social-icon{
   display: flex;
   align-items: center;
@@ -124,6 +117,14 @@ body{
   color: white;
   font-weight: 500;
   transition: 0.3s;
+}
+
+/* CONNECT SECTION SOCIAL LINKS (NEW – SAFE) */
+.connect-social-links{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .social-icon i{
@@ -843,6 +844,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

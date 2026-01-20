@@ -757,7 +757,7 @@ textarea:focus{
   display: block;
 }   
 
-/* GPAY PAYMENT QR */
+/* GPAY QR */
 
 .pay-wrapper{
   position: relative;
@@ -770,7 +770,7 @@ textarea:focus{
   left: 50%;
   transform: translateX(-50%);
   width: 220px;
-  background: #ffffff;
+  background: #fff;
   padding: 12px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -779,18 +779,6 @@ textarea:focus{
   z-index: 3000;
 }
 
-.gpay-qr-popup img{
-  width: 100%;
-  border-radius: 8px;
-}
-
-.gpay-qr-popup .upi-text{
-  font-weight: 600;
-  margin: 8px 0 4px;
-  font-size: 14px;
-}
-
-/* SHOW QR ON HOVER */
 .pay-wrapper:hover .gpay-qr-popup{
   display: block;
 }
@@ -832,6 +820,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

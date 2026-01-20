@@ -736,6 +736,8 @@ document.addEventListener("keydown", function (event) {
     window.location.href = "exam-schedule.html";
   }
 
+// GPAY SCANNER
+  
 function openPayModal(e){
   e.preventDefault();
   document.getElementById("payModal").style.display = "flex";
@@ -744,10 +746,18 @@ function openPayModal(e){
 function closePayModal(){
   document.getElementById("payModal").style.display = "none";
 }
+
+// BACKGROUND CLICK SE PAY MODAL CLOSE
+document.getElementById("payModal").addEventListener("click", function(e){
+  if(e.target === this){
+    closePayModal();
+  }
+});
   
 </script>
 </body>
 </html>
+
 
 
 

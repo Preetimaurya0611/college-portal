@@ -791,9 +791,10 @@ textarea:focus{
 }
 
 /* SHOW QR ON HOVER */
-.pay-wrapper:hover .gapy-qr-popup{
+.pay-wrapper:hover .gpay-qr-popup{
   display: block;
 }
+
 
 /* ================= REQUIRED STAR ================= */
 
@@ -831,6 +832,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

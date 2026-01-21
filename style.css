@@ -245,7 +245,7 @@ label{
 }
 
 .footer-col.social-col{
-  grid-column: span 2;   /* 2 column le lega */
+  grid-column: span 3;  
 }
 
 /* SOCIAL */
@@ -253,7 +253,7 @@ label{
   list-style:none;
   padding:0;
   display:flex;             
-  gap:28px;                
+  gap:20px;                
   align-items:center;
   flex-wrap: nowrap;  
   justify-content: space-between;
@@ -894,6 +894,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

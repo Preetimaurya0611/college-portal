@@ -213,8 +213,9 @@ label{
 
 .footer-grid{
   display:grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1.3fr 1fr 1.4fr 1fr;
   gap:60px;
+  align-items:start;
 }
 
 .footer-col h3{
@@ -245,10 +246,8 @@ label{
 }
 
 .footer-col.social-col{
-  grid-column: span 3;  
-  display:flex;             
-  flex-direction:column;
-  align-items:center;
+  grid-column: auto;  
+  display:block;            
 }
 
 /* SOCIAL */
@@ -257,10 +256,10 @@ label{
   padding:0;
   margin-top:15px;
   display:flex;             
-  gap:35px;                
+  gap:25px;                
   align-items:center;
   flex-wrap: nowrap;  
-  justify-content: center;
+  justify-content:flex-start;
 }
 
 .social-links li{
@@ -310,7 +309,6 @@ label{
 .campus span{
   color:#ffcc00;
   font-weight:bold;
-  align-items: center;
 }
 
 /* ================= EXAM ANNOUNCEMENT ================= */
@@ -900,6 +898,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

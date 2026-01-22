@@ -245,7 +245,7 @@ label{
 }
 
 .footer-col.social-col{
-  grid-column: span 3;  
+  grid-column: span 1;  
 }
 
 /* SOCIAL */
@@ -253,17 +253,17 @@ label{
   list-style:none;
   padding:0;
   display:flex;             
-  gap:20px;                
+  gap:25px;                
   align-items:center;
-  flex-wrap: nowrap;  
-  justify-content: space-between;
+  flex-wrap: wrap;  
+  justify-content: flex-start;
 }
 
 .social-links li{
   display:flex;
   align-items:center;
-  gap:14px;
-  margin-bottom:18px;
+  gap:12px;
+  margin-bottom:0;
   font-size:18px;
   color:#ffcc00;
 }
@@ -894,6 +894,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

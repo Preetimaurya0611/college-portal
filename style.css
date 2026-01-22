@@ -255,11 +255,12 @@ label{
   list-style:none;
   padding:0;
   margin-top:15px;
-  display:flex;             
-  gap:25px;                
-  align-items:center;
-  flex-wrap: nowrap;  
+  display:flex;
+  flex-wrap:nowrap;          
   justify-content:flex-start;
+  align-items:center;
+  gap:25px;
+  white-space:nowrap;        
 }
 
 .social-links li{
@@ -309,6 +310,11 @@ label{
 .campus span{
   color:#ffcc00;
   font-weight:bold;
+}
+
+.main-footer .container{
+  max-width:100% !important;
+  width:100% !important;
 }
 
 /* ================= EXAM ANNOUNCEMENT ================= */
@@ -898,6 +904,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

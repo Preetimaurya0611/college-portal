@@ -295,9 +295,9 @@ label{
 
 .footer-social{
   display:flex;
-  align-items:center;
-  gap:28px;
-  flex-wrap:nowrap;
+  align-items:flex-start;
+  gap:16px;
+  flex-direction:column;
   margin-top:15px;
 }
 
@@ -921,6 +921,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

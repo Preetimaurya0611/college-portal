@@ -201,7 +201,7 @@ label{
   margin-bottom:10px; 
 }
 
-/* ================= FOOTER (FINAL & CLEAN) ================= */
+/* ================= FOOTER ================= */
 
 .main-footer{
   background:#1f355d;
@@ -248,44 +248,6 @@ label{
   font-size:17px;
 }
 
-/* ================= SOCIAL (FIXED) ================= */
-
-.footer-social{
-  display:flex;
-  align-items:center;
-  gap:22px;
-  flex-wrap:wrap;
-  margin-top:15px;
-}
-
-.footer-social a{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  text-decoration:none;
-  color:#ffcc00;
-  font-size:16px;
-  white-space:nowrap;
-}
-
-.footer-social i{
-  width:40px;
-  height:40px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-size:18px;
-}
-
-/* ICON COLORS */
-.fb{background:#1877f2;}
-.tw{background:#000000;}
-.yt{background:#ff0000;}
-.ig{background:#e1306c;}
-.ln{background:#0a66c2;}
-
 /* ================= BOTTOM ================= */
 
 .footer-bottom{
@@ -328,6 +290,44 @@ label{
     gap:18px;
   }
 }
+
+/* === FORCE SOCIAL ICON FIX === */
+
+.footer-social{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  flex-wrap:wrap;
+  margin-top:15px;
+}
+
+.footer-social a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:#ffcc00;
+  font-size:16px;
+}
+
+.footer-social i{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#ffffff !important;
+  font-size:18px;
+}
+
+/* icon colors */
+.footer-social .fb{background:#1877f2;}
+.footer-social .tw{background:#000000;}
+.footer-social .yt{background:#ff0000;}
+.footer-social .ig{background:#e1306c;}
+.footer-social .ln{background:#0a66c2;}
+
 
 /* ================= EXAM ANNOUNCEMENT ================= */
 
@@ -916,6 +916,7 @@ textarea:focus{
 
 /* RESPONSIVE */
 @media(max-width:768px){ .hero h1{font-size:30px;} .form-card{padding:25px;} .nav-link{margin-left:0;} }
+
 
 
 

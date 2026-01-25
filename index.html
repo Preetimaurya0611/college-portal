@@ -663,20 +663,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-  function checkBackend() {
-    fetch("https://college-portal-backend-08kj.onrender.com")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("backendResult").innerText = data;
-      })
-      .catch(error => {
-        document.getElementById("backendResult").innerText = "Backend not reachable";
-      });
-  }
+
+function checkBackend() {
+  const result = document.getElementById("backendResult");
+  result.innerText = "Checking backend...";
+
+  fetch("https://college-portal-backend-08kj.onrender.com/")
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then(data => {
+      result.innerText = data.message;
+    })
+    .catch(error => {
+      result.innerText = "Backend not reachable";
+      console.error(error);
+    });
+}
 
 </script>
 </body>
 </html>
+
 
 
 
